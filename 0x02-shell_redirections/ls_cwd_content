@@ -1,0 +1,28 @@
+total 92
+drwxrwxr-x 2 vagrant vagrant 4096 Feb  2 18:21 .
+drwxrwxr-x 6 vagrant vagrant 4096 Feb  1 20:26 ..
+-rwxrwxr-x 1 vagrant vagrant   32 Feb  2 18:12 0-hello_world
+-rwxrwxr-x 1 vagrant vagrant   13 Feb  1 23:03 0-hello_world~
+-rwxrwxr-x 1 vagrant vagrant   28 Feb  2 00:48 1-confused_smiley
+-rwxrwxr-x 1 vagrant vagrant   27 Feb  1 23:26 1-confused_smiley~
+-rwxrwxr-x 1 vagrant vagrant   28 Feb  1 23:35 2-hellofile
+-rwxrwxr-x 1 vagrant vagrant   29 Feb  1 23:34 2-hellofile~
+-rwxrwxr-x 1 vagrant vagrant   39 Feb  2 00:27 3-twofiles
+-rwxrwxr-x 1 vagrant vagrant   39 Feb  1 23:36 3-twofiles~
+-rwxrwxr-x 1 vagrant vagrant   29 Feb  2 00:30 4-lastlines
+-rwxrwxr-x 1 vagrant vagrant   32 Feb  2 00:30 4-lastlines~
+-rwxrwxr-x 1 vagrant vagrant   29 Feb  2 00:31 5-firstlines
+-rwxrwxr-x 1 vagrant vagrant   13 Feb  2 00:31 5-firstlines~
+-rwxrwxr-x 1 vagrant vagrant   25 Feb  2 01:14 6-third_line
+-rwxrwxr-x 1 vagrant vagrant   35 Feb  2 01:01 6-third_line~
+-rwxrwxr-x 1 vagrant vagrant   92 Feb  2 18:17 7-file
+-rwxrwxr-x 1 vagrant vagrant   69 Feb  2 01:15 7-file~
+-rwxrwxr-x 1 vagrant vagrant   36 Feb  2 18:21 8-cwd_state
+-rwxrwxr-x 1 vagrant vagrant   13 Feb  2 18:20 8-cwd_state~
+-rwxrwxr-x 1 vagrant vagrant   13 Feb  1 20:44 example
+-rwxrwxr-x 1 vagrant vagrant    0 Feb  1 20:44 example~
+-rw-rw-r-- 1 vagrant vagrant    0 Feb  2 18:18 \*\'"Holberton School"\'\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 vagrant vagrant  938 Feb  2 00:34 iacta
+-rw-rw-r-- 1 vagrant vagrant    0 Feb  2 00:34 iacta~
+-rw-rw-r-- 1 vagrant vagrant    0 Feb  2 18:21 ls_cwd_content
+-rwxrwxr-x 1 vagrant vagrant 2498 Feb  1 20:42 README.md
