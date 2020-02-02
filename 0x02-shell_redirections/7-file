@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir "\*\\'"""Holberton School"""\'\\*$\?\*\*\*\*\*:)"
+echo 'Holberton School' | touch "\*\\'\"Holberton School\"\'\\*$\?\*\*\*\*\*:)"
