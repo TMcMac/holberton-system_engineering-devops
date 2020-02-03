@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | find | wc
+echo $PATH | tr "/" " " | wc -w
