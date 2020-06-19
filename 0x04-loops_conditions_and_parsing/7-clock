@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# a clock script to print out the minutes and hours in a 12 hour period
+
+hour=0
+min=0
+while [ $hour -lt 12 ]
+do
+    case $min in
+	0 )
+	    echo "Hour: $hour"
+	    min=$(( min+1 ));;
+	60 )
+	    min=0
+	    hour=$(( hour+1 ));;
+	* )	
+	    echo $min
+	    min=$(( min+1 ));;
+esac
+done
+echo "Hour: $hour"
