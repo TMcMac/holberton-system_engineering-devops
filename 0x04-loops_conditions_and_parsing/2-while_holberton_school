@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# a while loop script to print out "Holberton School" * 10
+
+i=0
+while [ $i -lt 10 ]
+do
+    echo "Holberton School"
+    i=$(( i + 1 ))
+done
