@@ -6,6 +6,7 @@ while [ $i -le 10 ]
 do
     if [ $i -eq 9 ]
     then
+	echo "Holberton School"
 	echo "Hi"
 	i=$(( i+1 ))
     else
