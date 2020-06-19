@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A simple script to say "Holberton School" 9 time and "Hi" once
+
+i=1
+while [ $i -le 10 ]
+do
+    if [ $i -eq 9 ]
+    then
+	echo "Hi"
+	i=$(( i+1 ))
+    else
+	echo "Holberton School"
+	i=$(( i+1 ))
+fi
+done	
