@@ -3,7 +3,7 @@
 
 hour=0
 min=0
-while [ $hour -lt 12 ]
+while [ $hour -lt 13 ]
 do
     case $min in
 	0 )
@@ -17,4 +17,3 @@ do
 	    min=$(( min+1 ));;
 esac
 done
-echo "Hour: $hour"
