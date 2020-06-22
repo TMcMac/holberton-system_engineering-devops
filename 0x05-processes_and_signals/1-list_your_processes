@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # a simple script to show all current running processes
 
-ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,comm
+ps -aux -H
