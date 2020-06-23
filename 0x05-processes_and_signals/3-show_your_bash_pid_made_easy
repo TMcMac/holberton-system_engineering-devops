@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# a simple script to show pids for bash commands
+pgrep -l 'bash'
