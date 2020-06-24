@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# a simple script that resists death with a few messages
+
+echo $$ > /var/run/holbertonscript.pid
+
+sigterm() {
+	  echo "I hate the kill command"
+	  rm -r "/var/run/holbertonscript.pid"
+	  exit
+}
+
+sigint() {
+	 echo "Y U no love me?!"
+	 exit
+}
+
+trap SIGTERM
+trap SIGINT
+while :
+do
+	echo "To infinity and beyond"
+done
