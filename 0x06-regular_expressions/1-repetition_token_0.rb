@@ -1,3 +1,2 @@
 #!/usr/bin/env ruby
-first_arg = ARGV[0]
-puts first_arg.scan(/hbtt+n/).join()
+puts ARGV[0].scan(/hbt{2,5}n/).join()
