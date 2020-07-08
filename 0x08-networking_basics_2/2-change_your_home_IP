@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Networking basics 2 question 2 change localhost and facebook ip addresses
+$sudo ifconfig lo 127.0.0.2
+$sudo cp /etc/hosts ~/hosts_updt
+$echo "8.8.8.8\tfacebook.com" >> ~/hosts_updt
+$sudo cp -f  ~/hosts_updt /etc/hosts
