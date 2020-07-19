@@ -1,7 +1,14 @@
 1. The client opens a browser and enters a URL for the page they would like to visit
-2. The Browser sends a HTTP request with the hostname and URL to the webserver requesting that page and information
-3. The webserver validate the request and that the content exists. If the page is static the webserver can use the URL path to retrieve the file and return it to the client via the HTTP request. 
-3.5 If the site is dynamic and needs to be created then requests the content from the Application server
-4. The application server pulls the HTML, CSS, and JavaScript from the codebase files on the server
-5. The application server then pulls any additional infromation needed to dynamically render the webpage from the SQL data base 
-6.
+2. The browser checks to see if it has the IP address for that domain name cached, if it doesn't it checks with the OS.
+3. If the the OS has the IP address cached it hands it to the Browser. If not the OS check with a resolver.
+4. The reolver checks the ISP cache for the IP address and if it does not have it cached it goes to the Root Sever which points the resolver to the Top Level Domain server for that URL extention (.com or other)
+5. The TLD server can provide the name server that hosts that domain and points the resolver there
+6. The resolver checks with the name server which can give the IP address for the domain name 
+7. The resolver returns with the IP address and hands it off to the browser 
+8. The Browser sends a HTTP request with the hostname and URL to the IP address for the webserver and requests the page and information for the URL
+10. The webserver validates the request and that the content exists. If the page is static the webserver can use the URL path to retrieve the file and return it to the client via the HTTP request. 
+10.5 If the site is dynamic and needs to be created then the web server requests the content from the Application server
+11. The application server reaches out to the code base file for the HTML, CSS, and JavaScript. If content is to be dynamically rendered then the codebase will reach out to the SQL database for necessary data.
+12. The SQL database answers the queries from the codebase and the codebase hands the content back to the Application server.
+13. The application server either sends the content directly back to the browser or it passes it to the Webserver which then passes it to the browser. 
+14. The browser displays the webpage for the user.
