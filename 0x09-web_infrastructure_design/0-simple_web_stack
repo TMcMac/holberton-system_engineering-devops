@@ -1,0 +1,7 @@
+1. The client opens a browser and enters a URL for the page they would like to visit
+2. The Browser sends a HTTP request with the hostname and URL to the webserver requesting that page and information
+3. The webserver validate the request and that the content exists. If the page is static the webserver can use the URL path to retrieve the file and return it to the client via the HTTP request. 
+3.5 If the site is dynamic and needs to be created then requests the content from the Application server
+4. The application server pulls the HTML, CSS, and JavaScript from the codebase files on the server
+5. The application server then pulls any additional infromation needed to dynamically render the webpage from the SQL data base 
+6.
