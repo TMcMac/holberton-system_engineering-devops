@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A script to create an ssh key pair, double size, and save it to a specific file
+
+ssh-keygen -b 4096 -N betty -f holberton
