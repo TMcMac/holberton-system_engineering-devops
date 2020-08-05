@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A script that is meant to install nginx on a server, and make sure that when a GET request 
+# is submited a plain HTML page with Holberton School is served
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo echo "Holberton School" > /var/www/html/index.html
+sudo service nginx restart
