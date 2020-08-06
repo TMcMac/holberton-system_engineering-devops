@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A script configures an nginx server with a redirect
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Holberton School" > /var/www/html/index.html
+sed -i '/^\tserver_name.*/a \\trewrite ^\/redirect_me https://www.youtube.com/watch?v=dQw4w9WgXcQ permanent;' /etc/nginx/sites-available/default
+sudo service nginx restart
