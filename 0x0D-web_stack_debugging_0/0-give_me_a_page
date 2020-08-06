@@ -4,6 +4,6 @@
 sudo apt-get -y update
 sudo apt-get -y install apache2
 sudo apt-get -y install apache2-utils
-sudo echo "ServerName localhost" >> /etc/apache2/apache2.conf
+sudo echo "ServerName localhost" | sudo tee /etc/apache2/apache2.conf
+sudo echo "Hello Holberton" | sudo tee /var/www/html/index.html
 sudo service apache2 start
-sudo echo "Holberton School" | sudo tee /var/www/html/index.html
