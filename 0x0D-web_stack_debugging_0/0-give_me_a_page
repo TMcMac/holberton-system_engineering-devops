@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script to install Apache and set an html page with Hello Holberton
+
+sudo apt-get -y update
+sudo apt-get -y install apache2
+sudo apt-get -y install apache2-utils
+sudo echo "ServerName localhost" >> /etc/apache2/apache2.conf
+sudo service apache2 start
+sudo echo "Holberton School" > /var/www/html/index.html
