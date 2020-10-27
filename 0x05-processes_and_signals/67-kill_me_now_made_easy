@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# a simple script for using pkill to kill our infinte process from 4
-pkill -f "./7-highlander"
