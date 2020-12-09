@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A script to log into a webserver
 
-ssh -i ~/.ssh/holberton ubuntu@34.73.235.26
+ssh -i ~/.ssh/holberton ubuntu@104.196.104.25
