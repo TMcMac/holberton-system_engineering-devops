@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+service nginx stop
+rm /etc/nginx/sites-enabled/default
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx start

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#This script is meant to ensure nginx is listening on port 80
+service nginx stop
+rm /etc/nginx/sites-enabled/default
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx start
