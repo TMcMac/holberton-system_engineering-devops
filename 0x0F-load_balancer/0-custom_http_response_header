@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo touch /var/www/html/index.html
 sudo chmod 777 /var/www/html/index.html
-sudo echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" | sudo tee /var/www/html/index.html
 sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
 sudo sed -i '/^[[:blank:]]*server_name/s/$/\n\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=dQw4w9WgXcQ permanent;\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html\n\t{ root \/var\/www\/html;\n\tinternal;}/' /etc/nginx/sites-available/default
 sudo sed -i '/^http {.*/a \\tadd_header X-Served-By '"${HOSTNAME}"';' /etc/nginx/nginx.conf
