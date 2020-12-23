@@ -3,15 +3,15 @@
 print_info()
 {
     echo -n "The subdomain $2"
-    dig $2.$1 | grep -A1 'ANSWER SECTION' | grep "$2" | awk '{ print " is a " $4 " record and points to " $5}'
+    dig "$2.$1" | grep -A1 'ANSWER SECTION' | grep "$2" | awk '{ print " is a " $4 " record and points to " $5}'
 }
 
 
 if [ $# -eq 2 ]; then
-    print_info $1 $2
+    print_info "$1" "$2"
 elif [ $# -eq 1 ]; then
     for sub in www lb-01 web-01 web-02
     do
-	print_info $1 $sub
+	print_info "$1" "$sub"
     done
 fi
