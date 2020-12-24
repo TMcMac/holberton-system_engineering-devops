@@ -38,8 +38,6 @@ defaults
 
 frontend http_front
         bind *:80
-        bind *:443 ssl crt /etc/haproxy/certs/new_key.pem
-        http-request redirect scheme https unless { ssl_fc }
         stats uri /haproxy?stats
         default_backend http_back
 
@@ -48,3 +46,7 @@ backend http_back
         server 1646-web-01 34.75.46.132:80 check
         server 1646-web-02 104.196.16.10:80 check
 
+frontend http_front
+        bind *:443 ssl crt /etc/haproxy/certs/new_key.pem
+        http-request redirect scheme https unless { ssl_fc }
+	default_backend http_back
