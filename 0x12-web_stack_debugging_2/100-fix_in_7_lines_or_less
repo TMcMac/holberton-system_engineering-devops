@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# sets up webserver to have nginx as user instead of root
+sudo chown nginx:nginx /etc/nginx/nginx.conf
+sudo chmod a+rwx /etc/nginx/nginx.conf
+sed -i 's/80/8080/' /etc/nginx/sites-available/default
+pkill apache2
+su nginx service nginx restart
