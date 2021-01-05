@@ -1,1 +1,8 @@
 #!/usr/bin/env bash
+#Script to change use if one is supplied state it
+if [ "$#" -eq 1 ]
+then
+    sudo -u $1 whoami
+else
+    whoami
+fi

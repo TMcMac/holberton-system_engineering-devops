@@ -1,1 +1,8 @@
 #!/usr/bin/env bash
+#Script to change nginx control over to a user nginx
+sudo chown -R nginx:nginx /etc/nginx 
+sudo chmod u+rwx /etc/nginx/nginx.conf
+sudo sed -i 's/#user www-data/user nginx/' /etc/nginx/nginx.conf
+sudo -u nginx sed -i 's/80/8080/' /etc/nginx/sites-available/default
+sudo pkill apache2
+sudo -u nginx service nginx restart
