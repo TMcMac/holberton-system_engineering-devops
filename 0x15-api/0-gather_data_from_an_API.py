@@ -28,7 +28,7 @@ for done in todo_dict:
         completed += 1
         done_tasks.append(done.get('title'))
     total_tasks += 1
-print("Employee {} is done with tasks({}/{}:)".format(employee_name,
+print("Employee {} is done with tasks({}/{}):".format(employee_name,
                                                       completed,
                                                       total_tasks))
 for task in done_tasks:
