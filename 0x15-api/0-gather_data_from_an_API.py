@@ -32,4 +32,4 @@ print("Employee {} is done with tasks({}/{}):".format(employee_name,
                                                       completed,
                                                       total_tasks))
 for task in done_tasks:
-    print("\t{}".format(task))
+    print("\t\s{}".format(task))
