@@ -7,8 +7,8 @@ information about his/her TODO list progress.
 
 
 if __name__ == "__main__":
-    import requests
     import json
+    import requests
     from sys import argv
 
     employee_id = argv[1]
