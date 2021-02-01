@@ -22,7 +22,7 @@ if __name__ == "__main__":
         for task in data_todos:
             new_item = {"task": task.get('title'),
                         "completed": task.get('completed'),
-                        "username": task.get('username')}
+                        "username": item.get('username')}
             tasks.append(new_item)
         json_dict[emp_id] = tasks
 
